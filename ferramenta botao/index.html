@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Botão Troca Cor</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>adição da pasta e arquivo html</p>
-    
+    <!-- Site com botão na tela para mudar o tema -->
+    <div class="button">
+        <div class="ball"></div>
+    </div>
+    <script>
+        document.querySelector('.ball').addEventListener('click', (event) => {
+            event.target.classList.toggle('ball-move');
+            document.body.classList.toggle('dark');
+            document.querySelector('.button').classList.toggle('button-color');
+            document.querySelector('.ball').classList.toggle('ball-color');
+        });
+    </script>
 </body>
 </html>
