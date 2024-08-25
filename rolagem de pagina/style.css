@@ -1,0 +1,21 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Impede a rolagem extra */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
